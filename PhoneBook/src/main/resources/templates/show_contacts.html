@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+Kontakty:
+
+    <br/>
+    <div th:each="contact : ${show}">
+        <span th:text="${ contact.toString()}"></span>
+
+        <br/>
+    </div>
+<button><a href="/phonebook">Go to start page</a> </button>
+
+</body>
+</html>

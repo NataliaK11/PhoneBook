@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/phonebook/add" method="post" th:object="${contact}">
+Name: <input type="text" th:field="*{name}"><br/>
+Surname: <input type="text" th:field="*{surname}"><br/>
+Phone number: <input type="text" th:field="*{phoneNumber}"><br/>
+    <input type="submit" value="Wyślij">
+</form>
+<div>
+
+</div>
+</body>
+</html>
